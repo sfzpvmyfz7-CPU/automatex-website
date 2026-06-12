@@ -614,167 +614,213 @@
 <!-- ═══════════════════════ SERVICES ═══════════════════════ -->
 <section id="services" class="section" style="background:var(--ink-2)">
   <div class="container">
+
+    <!-- Header -->
     <div class="section-header reveal">
       <div class="label">Leistungen</div>
-      <h2 class="display-lg" style="margin-top:14px">Fünf Assistenten. Ein System.</h2>
-      <p class="body-md" style="margin-top:16px;max-width:600px">Jeder AutomateX-Assistent löst ein konkretes Problem in Ihrem Alltag – in drei Ausbaustufen, die mit Ihrem Unternehmen wachsen.</p>
+      <h2 class="display-lg" style="margin-top:14px">Fünf Agenten. Automatisch auf Ihre Branche angepasst.</h2>
+      <p class="body-md" style="margin-top:16px;max-width:660px">Jeder AutomateX-Agent erkennt automatisch Ihre Branche, Unternehmensgröße und Prozesse – und liefert Ergebnisse, die genau zu Ihrem Betrieb passen. Ein Handwerker bekommt andere Analysen als ein Steuerberater.</p>
     </div>
 
-    <!-- Assistant selector tabs -->
+    <!-- Branchenanpassungs-Hinweis -->
+    <div class="branch-hint reveal" style="margin-bottom:48px">
+      <div class="branch-hint-icon">⚡</div>
+      <div class="branch-hint-text">
+        <strong>Automatische Branchenanpassung inklusive</strong> – Der Agent erkennt automatisch Branche, Unternehmensgröße, Prozesse und Ziele und passt alle Analysen, Antworten und Empfehlungen individuell an.
+      </div>
+      <div class="branch-hint-tags">
+        <span>Handwerk</span><span>Steuerberater</span><span>Immobilien</span><span>IT &amp; Agenturen</span><span>Logistik</span><span>Recht</span><span>E-Commerce</span><span>Pflege</span>
+      </div>
+    </div>
+
+    <!-- Assistant Tabs -->
     <div class="assist-tabs reveal" id="assistTabs">
-      <button class="assist-tab active" onclick="switchAssist('mail')">📩 Mail</button>
-      <button class="assist-tab" onclick="switchAssist('pdf')">📄 PDF</button>
-      <button class="assist-tab" onclick="switchAssist('recruiting')">👥 Recruiting</button>
-      <button class="assist-tab" onclick="switchAssist('support')">🎧 Support</button>
-      <button class="assist-tab" onclick="switchAssist('workflow')">⚙️ Workflow</button>
+      <button class="assist-tab active" onclick="switchAssist('mail')">📩 E-Mail Agent</button>
+      <button class="assist-tab" onclick="switchAssist('pdf')">📄 PDF Agent</button>
+      <button class="assist-tab" onclick="switchAssist('recruiting')">👥 Recruiting Agent</button>
+      <button class="assist-tab" onclick="switchAssist('support')">🎧 Support Agent</button>
+      <button class="assist-tab" onclick="switchAssist('workflow')">⚙️ Workflow Agent</button>
       <button class="assist-tab" onclick="switchAssist('individual')">✨ Individuell</button>
     </div>
 
-    <!-- MAIL ASSISTANT -->
+    <!-- ══ E-MAIL AGENT ══ -->
     <div class="assist-panel active" id="assist-mail">
       <div class="pricing-grid">
         <div class="pricing-card reveal">
           <div class="pricing-tier">Starter</div>
-          <div class="pricing-name">E-Mails vorsortieren</div>
+          <div class="pricing-name">E-Mails automatisch analysieren</div>
+          <p class="pricing-desc">Perfekt für kleine Unternehmen, Handwerker und Selbstständige.</p>
           <ul class="pricing-list">
+            <li>E-Mails analysieren &amp; zusammenfassen</li>
             <li>Prioritäten erkennen</li>
-            <li>Spam aussortieren</li>
-            <li>Kategorien bilden</li>
-            <li>Tagesübersicht erstellen</li>
+            <li>Wichtige Informationen extrahieren</li>
+            <li>Professionelle Antwortentwürfe erstellen</li>
           </ul>
-          <div class="pricing-result">Ergebnis: Weniger Chaos im Posteingang.</div>
+          <div class="pricing-result">Ergebnis: Schnellere Bearbeitung eingehender E-Mails.</div>
           <a href="#contact" class="pricing-cta">Jetzt starten →</a>
         </div>
         <div class="pricing-card featured reveal reveal-delay-1">
           <div class="pricing-badge">Empfohlen</div>
           <div class="pricing-tier">Professional</div>
-          <div class="pricing-name">E-Mail-Bearbeitung automatisieren</div>
+          <div class="pricing-name">Analyse, Leads &amp; Vertrieb</div>
+          <p class="pricing-desc">Alles aus Starter plus erweiterte Vertriebs-Intelligenz.</p>
           <ul class="pricing-list">
-            <li>Alles aus Starter</li>
-            <li>Antworten automatisch vorbereiten</li>
-            <li>Kundenanfragen erkennen</li>
-            <li>Weiterleitungen automatisieren</li>
-            <li>Eskalationen bei Notfällen</li>
+            <li>Branchenerkennung</li>
+            <li>Lead Scoring &amp; Kaufsignale erkennen</li>
+            <li>Risiken &amp; offene Punkte identifizieren</li>
+            <li>Discovery-Fragen erstellen</li>
+            <li>Individuelle Antwortentwürfe</li>
           </ul>
-          <div class="pricing-result">Ergebnis: Bis zu 80% weniger manueller Aufwand.</div>
+          <div class="pricing-result">Ergebnis: Bessere Lead-Qualifizierung und höhere Abschlussquoten.</div>
           <a href="#contact" class="pricing-cta">Jetzt starten →</a>
         </div>
         <div class="pricing-card reveal reveal-delay-2">
           <div class="pricing-tier">Enterprise</div>
-          <div class="pricing-name">Vollautomatische E-Mail-Abwicklung</div>
+          <div class="pricing-name">Vollständige Vertriebsunterstützung</div>
+          <p class="pricing-desc">Alles aus Professional plus strategische Vertriebsintelligenz.</p>
           <ul class="pricing-list">
-            <li>Alles aus Professional</li>
-            <li>Individuelle KI-Entscheidungen</li>
-            <li>CRM-Anbindung</li>
-            <li>ERP-Anbindung</li>
-            <li>Mehrsprachige Kommunikation</li>
-            <li>Komplette Prozessautomatisierung</li>
+            <li>Stakeholder- &amp; Entscheidungsanalyse</li>
+            <li>Vertriebsstrategie &amp; Deal-Risiken</li>
+            <li>ROI-Potenzial &amp; Management Reports</li>
+            <li>Gesprächsleitfäden &amp; Angebotsstrategie</li>
           </ul>
-          <div class="pricing-result">Ergebnis: Der Posteingang arbeitet praktisch selbstständig.</div>
+          <div class="pricing-result">Ergebnis: Vollständige Vertriebs- und Presales-Unterstützung.</div>
           <a href="#contact" class="pricing-cta">Anfragen →</a>
+        </div>
+      </div>
+      <div class="branch-examples">
+        <div class="branch-ex-label">Branchenanpassung – Beispiele</div>
+        <div class="branch-ex-grid">
+          <div class="branch-ex"><strong>Handwerk</strong><span>Projektgröße · Terminwunsch · Dringlichkeit</span></div>
+          <div class="branch-ex"><strong>Steuerberater</strong><span>Mandantenpotenzial · Fristen · Steuerbereiche</span></div>
+          <div class="branch-ex"><strong>Immobilien</strong><span>Kauf-/Verkaufsabsicht · Objektwert · Finanzierung</span></div>
+          <div class="branch-ex"><strong>IT &amp; Agenturen</strong><span>Budget · Systeme · Discovery-Potenzial</span></div>
+          <div class="branch-ex"><strong>Industrie &amp; Logistik</strong><span>Prozesskomplexität · Systeme · Entscheidungsstruktur</span></div>
         </div>
       </div>
     </div>
 
-    <!-- PDF ASSISTANT -->
+    <!-- ══ PDF AGENT ══ -->
     <div class="assist-panel" id="assist-pdf">
       <div class="pricing-grid">
         <div class="pricing-card reveal">
           <div class="pricing-tier">Starter</div>
-          <div class="pricing-name">PDFs automatisch auslesen</div>
+          <div class="pricing-name">PDFs auslesen &amp; kategorisieren</div>
+          <p class="pricing-desc">Kein manuelles Durchsuchen von Dokumenten mehr.</p>
           <ul class="pricing-list">
-            <li>Texte erkennen</li>
-            <li>Daten extrahieren</li>
+            <li>PDFs auslesen &amp; zusammenfassen</li>
+            <li>Daten automatisch extrahieren</li>
             <li>Dokumente kategorisieren</li>
           </ul>
-          <div class="pricing-result">Ergebnis: Keine manuelle Datenerfassung mehr.</div>
+          <div class="pricing-result">Ergebnis: Kein manuelles Durchsuchen von Dokumenten mehr.</div>
           <a href="#contact" class="pricing-cta">Jetzt starten →</a>
         </div>
         <div class="pricing-card featured reveal reveal-delay-1">
           <div class="pricing-badge">Empfohlen</div>
           <div class="pricing-tier">Professional</div>
-          <div class="pricing-name">Dokumentenprozesse automatisieren</div>
+          <div class="pricing-name">Dokumente analysieren &amp; verarbeiten</div>
+          <p class="pricing-desc">Alles aus Starter plus tiefe Dokumentenanalyse.</p>
           <ul class="pricing-list">
-            <li>Alles aus Starter</li>
-            <li>Rechnungen verarbeiten</li>
-            <li>Verträge analysieren</li>
-            <li>Dokumente archivieren</li>
-            <li>Daten automatisch weiterleiten</li>
+            <li>Vertrags- &amp; Rechnungsanalyse</li>
+            <li>Dokumentenklassifizierung</li>
+            <li>Wichtige Informationen erkennen</li>
+            <li>Antwortentwürfe bei Dokumentenanfragen</li>
           </ul>
-          <div class="pricing-result">Ergebnis: Dokumente werden automatisch verarbeitet.</div>
+          <div class="pricing-result">Ergebnis: Dokumente werden automatisch analysiert und verarbeitet.</div>
           <a href="#contact" class="pricing-cta">Jetzt starten →</a>
         </div>
         <div class="pricing-card reveal reveal-delay-2">
           <div class="pricing-tier">Enterprise</div>
-          <div class="pricing-name">Intelligente Dokumentenplattform</div>
+          <div class="pricing-name">Vollautomatisierte Dokumentenprozesse</div>
+          <p class="pricing-desc">Alles aus Professional plus Systemintegration.</p>
           <ul class="pricing-list">
-            <li>Alles aus Professional</li>
-            <li>Individuelle Dokumenttypen</li>
-            <li>ERP-Anbindung</li>
-            <li>Buchhaltungssysteme</li>
-            <li>Genehmigungsprozesse</li>
+            <li>ERP- &amp; Buchhaltungsintegration</li>
+            <li>Dokumenten-Workflows</li>
+            <li>Freigabeprozesse</li>
             <li>KI-Dokumentenanalyse</li>
           </ul>
-          <div class="pricing-result">Ergebnis: Vollautomatisierter Dokumentenfluss.</div>
+          <div class="pricing-result">Ergebnis: Vollständig automatisierte Dokumentenprozesse.</div>
           <a href="#contact" class="pricing-cta">Anfragen →</a>
+        </div>
+      </div>
+      <div class="branch-examples">
+        <div class="branch-ex-label">Branchenanpassung – Beispiele</div>
+        <div class="branch-ex-grid">
+          <div class="branch-ex"><strong>Steuerberater</strong><span>Rechnungen · Belege · Steuerunterlagen</span></div>
+          <div class="branch-ex"><strong>Immobilien</strong><span>Kaufverträge · Mietverträge · Exposés</span></div>
+          <div class="branch-ex"><strong>Rechtsanwälte</strong><span>Verträge · Schriftsätze · Mandantendokumente</span></div>
+          <div class="branch-ex"><strong>Industrie</strong><span>Lieferscheine · Aufträge · Qualitätsdokumente</span></div>
         </div>
       </div>
     </div>
 
-    <!-- RECRUITING ASSISTANT -->
+    <!-- ══ RECRUITING AGENT ══ -->
     <div class="assist-panel" id="assist-recruiting">
       <div class="pricing-grid">
         <div class="pricing-card reveal">
           <div class="pricing-tier">Starter</div>
-          <div class="pricing-name">Bewerbungen vorsortieren</div>
+          <div class="pricing-name">Bewerbungen analysieren &amp; vergleichen</div>
+          <p class="pricing-desc">Schnellere Bewerberauswahl ohne stundenlange Lesearbeit.</p>
           <ul class="pricing-list">
-            <li>Lebensläufe analysieren</li>
-            <li>Kandidaten bewerten</li>
-            <li>Shortlist erstellen</li>
+            <li>Bewerbungen analysieren</li>
+            <li>Lebensläufe zusammenfassen</li>
+            <li>Kandidaten vergleichen</li>
+            <li>Antwortentwürfe erstellen</li>
           </ul>
-          <div class="pricing-result">Ergebnis: Schnellere Vorauswahl.</div>
+          <div class="pricing-result">Ergebnis: Schnellere Bewerberauswahl.</div>
           <a href="#contact" class="pricing-cta">Jetzt starten →</a>
         </div>
         <div class="pricing-card featured reveal reveal-delay-1">
           <div class="pricing-badge">Empfohlen</div>
           <div class="pricing-tier">Professional</div>
           <div class="pricing-name">Recruiting automatisieren</div>
+          <p class="pricing-desc">Alles aus Starter plus vollständige Prozessautomatisierung.</p>
           <ul class="pricing-list">
-            <li>Alles aus Starter</li>
-            <li>Bewerberkommunikation</li>
-            <li>Terminvereinbarung</li>
-            <li>Interviewvorbereitung</li>
-            <li>Automatische Absagen</li>
+            <li>Kandidatenbewertung &amp; Ranking</li>
+            <li>Individuelle Interviewfragen</li>
+            <li>Recruiting-Analyse</li>
+            <li>Automatische Absagen &amp; Einladungen</li>
           </ul>
-          <div class="pricing-result">Ergebnis: Weniger Verwaltungsaufwand.</div>
+          <div class="pricing-result">Ergebnis: Bessere Einstellungsentscheidungen.</div>
           <a href="#contact" class="pricing-cta">Jetzt starten →</a>
         </div>
         <div class="pricing-card reveal reveal-delay-2">
           <div class="pricing-tier">Enterprise</div>
           <div class="pricing-name">KI-Recruiting-System</div>
+          <p class="pricing-desc">Alles aus Professional plus Systemintegration &amp; Talentmanagement.</p>
           <ul class="pricing-list">
-            <li>Alles aus Professional</li>
-            <li>Individuelle Bewertungskriterien</li>
-            <li>ATS-Anbindung</li>
             <li>Talentpool-Management</li>
-            <li>Mehrstufige Auswahlprozesse</li>
+            <li>ATS-Integration</li>
+            <li>Recruiting KPI Reports</li>
+            <li>Mehrstufige Bewerbungsprozesse</li>
           </ul>
-          <div class="pricing-result">Ergebnis: Schneller die richtigen Mitarbeiter finden.</div>
+          <div class="pricing-result">Ergebnis: Vollständige Recruiting-Automatisierung.</div>
           <a href="#contact" class="pricing-cta">Anfragen →</a>
+        </div>
+      </div>
+      <div class="branch-examples">
+        <div class="branch-ex-label">Branchenanpassung – Beispiele</div>
+        <div class="branch-ex-grid">
+          <div class="branch-ex"><strong>Handwerk</strong><span>Fachkräfte · Monteure · Auszubildende</span></div>
+          <div class="branch-ex"><strong>IT</strong><span>Entwickler · Administratoren · Projektmanager</span></div>
+          <div class="branch-ex"><strong>Pflege</strong><span>Pflegekräfte · Verwaltung · Fachpersonal</span></div>
+          <div class="branch-ex"><strong>Industrie</strong><span>Produktion · Logistik · Technik</span></div>
         </div>
       </div>
     </div>
 
-    <!-- SUPPORT ASSISTANT -->
+    <!-- ══ SUPPORT AGENT ══ -->
     <div class="assist-panel" id="assist-support">
       <div class="pricing-grid">
         <div class="pricing-card reveal">
           <div class="pricing-tier">Starter</div>
-          <div class="pricing-name">Standardfragen automatisch beantworten</div>
+          <div class="pricing-name">Kundenanfragen automatisch beantworten</div>
+          <p class="pricing-desc">Sofortreaktionen auf häufige Anfragen rund um die Uhr.</p>
           <ul class="pricing-list">
-            <li>FAQ-Antworten</li>
-            <li>Sofortreaktionen</li>
+            <li>Kundenanfragen beantworten</li>
+            <li>FAQ-Antworten automatisch</li>
             <li>Ticket-Erstellung</li>
+            <li>Antwortentwürfe erstellen</li>
           </ul>
           <div class="pricing-result">Ergebnis: Schnellere Reaktionszeiten.</div>
           <a href="#contact" class="pricing-cta">Jetzt starten →</a>
@@ -782,86 +828,108 @@
         <div class="pricing-card featured reveal reveal-delay-1">
           <div class="pricing-badge">Empfohlen</div>
           <div class="pricing-tier">Professional</div>
-          <div class="pricing-name">Kundenservice automatisieren</div>
+          <div class="pricing-name">Intelligenter Kundenservice</div>
+          <p class="pricing-desc">Alles aus Starter plus smarte Priorisierung.</p>
           <ul class="pricing-list">
-            <li>Alles aus Starter</li>
-            <li>Kontextbezogene Antworten</li>
             <li>Ticket-Priorisierung</li>
-            <li>Automatische Weiterleitung</li>
+            <li>Eskalationserkennung</li>
+            <li>Kundenzufriedenheitsanalyse</li>
+            <li>Kontextbezogene Antworten</li>
           </ul>
-          <div class="pricing-result">Ergebnis: Weniger Supportaufwand.</div>
+          <div class="pricing-result">Ergebnis: Effizienterer Kundenservice.</div>
           <a href="#contact" class="pricing-cta">Jetzt starten →</a>
         </div>
         <div class="pricing-card reveal reveal-delay-2">
           <div class="pricing-tier">Enterprise</div>
           <div class="pricing-name">KI-Support-Center</div>
+          <p class="pricing-desc">Alles aus Professional plus 24/7-Vollautomatisierung.</p>
           <ul class="pricing-list">
-            <li>Alles aus Professional</li>
-            <li>Omnichannel-Support</li>
             <li>CRM-Anbindung</li>
             <li>Wissensdatenbank</li>
-            <li>Individuelle Eskalationslogik</li>
+            <li>Omnichannel-Support</li>
+            <li>KI-Support-Center</li>
           </ul>
-          <div class="pricing-result">Ergebnis: Rund-um-die-Uhr Kundenservice.</div>
+          <div class="pricing-result">Ergebnis: 24/7 automatisierter Kundenservice.</div>
           <a href="#contact" class="pricing-cta">Anfragen →</a>
+        </div>
+      </div>
+      <div class="branch-examples">
+        <div class="branch-ex-label">Branchenanpassung – Beispiele</div>
+        <div class="branch-ex-grid">
+          <div class="branch-ex"><strong>E-Commerce</strong><span>Bestellungen · Retouren · Lieferstatus</span></div>
+          <div class="branch-ex"><strong>SaaS</strong><span>Softwarefragen · Accounts · Abonnements</span></div>
+          <div class="branch-ex"><strong>Handwerk</strong><span>Termine · Aufträge · Serviceeinsätze</span></div>
+          <div class="branch-ex"><strong>Immobilien</strong><span>Mietanfragen · Objektfragen · Besichtigungen</span></div>
         </div>
       </div>
     </div>
 
-    <!-- WORKFLOW ASSISTANT -->
+    <!-- ══ WORKFLOW AGENT ══ -->
     <div class="assist-panel" id="assist-workflow">
       <div class="pricing-grid">
         <div class="pricing-card reveal">
           <div class="pricing-tier">Starter</div>
-          <div class="pricing-name">Aufgaben automatisch weiterleiten</div>
+          <div class="pricing-name">Aufgaben &amp; Erinnerungen automatisieren</div>
+          <p class="pricing-desc">Keine vergessenen Aufgaben und Prozessschritte mehr.</p>
           <ul class="pricing-list">
-            <li>Erinnerungen</li>
-            <li>Benachrichtigungen</li>
-            <li>Aufgabenverteilung</li>
+            <li>Aufgaben automatisieren</li>
+            <li>Erinnerungen versenden</li>
+            <li>Benachrichtigungen erstellen</li>
+            <li>Prozesse überwachen</li>
           </ul>
-          <div class="pricing-result">Ergebnis: Nichts geht verloren.</div>
+          <div class="pricing-result">Ergebnis: Weniger manuelle Arbeit.</div>
           <a href="#contact" class="pricing-cta">Jetzt starten →</a>
         </div>
         <div class="pricing-card featured reveal reveal-delay-1">
           <div class="pricing-badge">Empfohlen</div>
           <div class="pricing-tier">Professional</div>
-          <div class="pricing-name">Prozesse verbinden</div>
+          <div class="pricing-name">Abteilungsübergreifende Automatisierung</div>
+          <p class="pricing-desc">Alles aus Starter plus toolübergreifende Workflows.</p>
           <ul class="pricing-list">
-            <li>Alles aus Starter</li>
             <li>Toolübergreifende Workflows</li>
-            <li>Automatische Freigaben</li>
+            <li>Freigabeprozesse</li>
             <li>Prozessketten</li>
+            <li>Automatische Aufgabenverteilung</li>
           </ul>
-          <div class="pricing-result">Ergebnis: Weniger manuelle Übergaben.</div>
+          <div class="pricing-result">Ergebnis: Abteilungsübergreifende Automatisierung.</div>
           <a href="#contact" class="pricing-cta">Jetzt starten →</a>
         </div>
         <div class="pricing-card reveal reveal-delay-2">
           <div class="pricing-tier">Enterprise</div>
-          <div class="pricing-name">Unternehmensweite Automatisierung</div>
+          <div class="pricing-name">Digitalisierte Unternehmensprozesse</div>
+          <p class="pricing-desc">Alles aus Professional plus vollständige Systemintegration.</p>
           <ul class="pricing-list">
-            <li>Alles aus Professional</li>
-            <li>Individuelle Prozesse</li>
-            <li>ERP-Anbindung</li>
-            <li>CRM-Anbindung</li>
-            <li>Mehrstufige Workflows</li>
+            <li>ERP- &amp; CRM-Integration</li>
+            <li>Unternehmensweite Workflows</li>
             <li>KI-gestützte Entscheidungen</li>
+            <li>Prozessmonitoring</li>
           </ul>
-          <div class="pricing-result">Ergebnis: Vollständig digitalisierte Abläufe.</div>
+          <div class="pricing-result">Ergebnis: Vollständig digitalisierte Unternehmensprozesse.</div>
           <a href="#contact" class="pricing-cta">Anfragen →</a>
+        </div>
+      </div>
+      <div class="branch-examples">
+        <div class="branch-ex-label">Branchenanpassung – Beispiele</div>
+        <div class="branch-ex-grid">
+          <div class="branch-ex"><strong>Handwerk</strong><span>Einsatzplanung · Angebotsprozesse</span></div>
+          <div class="branch-ex"><strong>Steuerberater</strong><span>Mandantenprozesse · Fristenmanagement</span></div>
+          <div class="branch-ex"><strong>Logistik</strong><span>Auftragssteuerung · Lieferketten</span></div>
+          <div class="branch-ex"><strong>Industrie</strong><span>Produktionsabläufe · Qualitätsprozesse</span></div>
         </div>
       </div>
     </div>
 
-    <!-- INDIVIDUELLE LÖSUNG -->
+    <!-- ══ INDIVIDUELLE LÖSUNG ══ -->
     <div class="assist-panel" id="assist-individual">
       <div class="pricing-grid">
         <div class="pricing-card reveal">
           <div class="pricing-tier">Starter</div>
           <div class="pricing-name">Analyse &amp; Potenziale</div>
+          <p class="pricing-desc">Der erste Schritt zur Automatisierung.</p>
           <ul class="pricing-list">
-            <li>Analyse Ihres Unternehmens</li>
-            <li>Identifikation erster Automatisierungspotenziale</li>
-            <li>Empfehlung passender Assistenten</li>
+            <li>Analyse der Anforderungen</li>
+            <li>Potenzialbewertung</li>
+            <li>Erste Konzeptidee</li>
           </ul>
           <div class="pricing-result">Ergebnis: Klarheit, wo Sie anfangen sollten.</div>
           <a href="#contact" class="pricing-cta">Kostenlos anfragen →</a>
@@ -870,10 +938,11 @@
           <div class="pricing-badge">Beliebt</div>
           <div class="pricing-tier">Professional</div>
           <div class="pricing-name">Strategie &amp; Umsetzung</div>
+          <p class="pricing-desc">Von der Analyse zur fertigen Automatisierung.</p>
           <ul class="pricing-list">
-            <li>Konkrete Automatisierungsstrategie</li>
-            <li>Prozessbewertung</li>
-            <li>Implementierung der Lösung</li>
+            <li>Individuelle Strategie</li>
+            <li>KI-Potenzialanalyse</li>
+            <li>Lösungsplanung &amp; Implementierung</li>
             <li>Schulung Ihres Teams</li>
           </ul>
           <div class="pricing-result">Ergebnis: Fertige Automatisierung in Ihrem Betrieb.</div>
@@ -882,109 +951,26 @@
         <div class="pricing-card reveal reveal-delay-2">
           <div class="pricing-tier">Enterprise</div>
           <div class="pricing-name">Individuelle KI-Lösung</div>
+          <p class="pricing-desc">Maßgeschneiderte Entwicklung ohne Kompromisse.</p>
           <ul class="pricing-list">
-            <li>Maßgeschneiderte KI-Entwicklung</li>
-            <li>Beratung &amp; Implementierung</li>
-            <li>Systemintegration</li>
+            <li>Individuelle KI-Entwicklung</li>
+            <li>Integration bestehender Systeme</li>
             <li>Langfristige Betreuung</li>
-            <li>Dedizierter Ansprechpartner</li>
+            <li>Skalierung &amp; Weiterentwicklung</li>
           </ul>
           <div class="pricing-result">Ergebnis: Vollständig individualisierte Automatisierung.</div>
           <a href="#contact" class="pricing-cta">Anfragen →</a>
         </div>
       </div>
+      <div class="branch-examples" style="background:rgba(245,166,35,0.05);border-color:var(--border-amber)">
+        <div class="branch-ex-label">Unser Versprechen</div>
+        <div style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;padding:0 4px">
+          Jede Lösung wird individuell auf Branche, Prozesse, Systeme und Ziele des Unternehmens angepasst.<br>
+          <strong style="color:var(--text-primary)">Keine Standardlösung. Keine Templates. Jeder Agent wird auf den jeweiligen Kunden zugeschnitten.</strong>
+        </div>
+      </div>
     </div>
 
-    <div class="services-grid" style="display:none">
-
-      <div class="service-card reveal">
-        <div class="service-icon">📧</div>
-        <span class="badge badge-amber" style="margin-bottom:16px">Mail Assistant</span>
-        <div class="service-name">E-Mails automatisch verwalten</div>
-        <div class="service-tagline">Der intelligente Filter für Ihren Posteingang</div>
-        <div class="service-problem">"Wir verlieren täglich 90 Minuten nur mit E-Mails."</div>
-        <p class="service-text">AutomateX liest jeden eingehenden E-Mail, erkennt Priorität, Absicht und Kategorie – und bereitet eine passende Antwort vor. Ihr Team sieht morgens eine klare Tagesübersicht statt einer überquellenden Inbox.</p>
-        <div class="service-benefits">
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Notfälle sofort sichtbar und eskaliert</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Standardantworten automatisch vorbereitet</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Spam und Irrelevantes automatisch aussortiert</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Tagesübersicht nach Priorität</div>
-        </div>
-        <div class="service-example">💡 Beispiel: Elektrobetrieb – von 90 Min. täglich auf 15 Min. – bei gleichzeitig 0 verpassten Notfällen.</div>
-      </div>
-
-      <div class="service-card reveal reveal-delay-1">
-        <div class="service-icon">👥</div>
-        <span class="badge badge-amber" style="margin-bottom:16px">Recruiting Assistant</span>
-        <div class="service-name">Bewerbungen automatisch sichten</div>
-        <div class="service-tagline">Ihre Shortlist – ohne Lesestunden</div>
-        <div class="service-problem">"30 Bewerbungen, und niemand hat Zeit für eine faire Vorauswahl."</div>
-        <p class="service-text">AutomateX liest jeden Lebenslauf und jedes Anschreiben, prüft sie gegen Ihr Anforderungsprofil und erstellt eine sortierte Shortlist mit Begründung. Einladungen werden automatisch vorbereitet.</p>
-        <div class="service-benefits">
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Qualifikations-Score nach Ihren Kriterien</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Einladungs-E-Mails automatisch vorbereitet</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Absagen höflich und automatisch</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Kein Bewerber wartet länger als 24h</div>
-        </div>
-        <div class="service-example">💡 Beispiel: Bauunternehmen – Bearbeitungszeit je Stelle von 6 Stunden auf 45 Minuten reduziert.</div>
-      </div>
-
-      <div class="service-card reveal reveal-delay-2">
-        <div class="service-icon">📄</div>
-        <span class="badge badge-amber" style="margin-bottom:16px">PDF Assistant</span>
-        <div class="service-name">Dokumente automatisch auswerten</div>
-        <div class="service-tagline">Rechnungen, Verträge, Protokolle – ohne Handarbeit</div>
-        <div class="service-problem">"Wir tippen täglich Daten aus PDFs ab. Das kostet uns Stunden."</div>
-        <p class="service-text">AutomateX liest jedes eingehende PDF, extrahiert relevante Daten automatisch und leitet sie weiter – in Ihr Buchhaltungssystem, Ihr Archiv oder an den zuständigen Mitarbeiter.</p>
-        <div class="service-benefits">
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Rechnungsdaten automatisch extrahiert</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Dokumente kategorisiert und archiviert</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Fehlende Unterlagen automatisch anfordern</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Übergabe an Buchhaltungssoftware</div>
-        </div>
-        <div class="service-example">💡 Beispiel: Steuerberatung – 14 Stunden Dateneingabe pro Woche eingespart. Fehlerquote: von 8% auf unter 1%.</div>
-      </div>
-
-      <div class="service-card reveal">
-        <div class="service-icon">💬</div>
-        <span class="badge badge-amber" style="margin-bottom:16px">Support Assistant</span>
-        <div class="service-name">Kundenanfragen effizienter bearbeiten</div>
-        <div class="service-tagline">Sofortantwort auf Standardfragen – rund um die Uhr</div>
-        <div class="service-problem">"Wir beantworten täglich dieselben 20 Fragen."</div>
-        <p class="service-text">AutomateX erkennt häufige Kundenanfragen und beantwortet sie automatisch in Ihrem Ton. Nur wirklich komplexe Fälle landen beim zuständigen Mitarbeiter – mit vollständigem Kontext.</p>
-        <div class="service-benefits">
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>80–90% der Standardfragen automatisch</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Sofortantwort auch außerhalb der Öffnungszeiten</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Komplex? → Eskalation mit vollem Kontext</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Höhere Kundenzufriedenheit durch schnelle Reaktion</div>
-        </div>
-        <div class="service-example">💡 Beispiel: Online-Shop – 72% der Support-Anfragen vollautomatisch beantwortet, 2 Mitarbeiter für Wachstum freigestellt.</div>
-      </div>
-
-      <div class="service-card reveal reveal-delay-1">
-        <div class="service-icon">⚙️</div>
-        <span class="badge badge-amber" style="margin-bottom:16px">Workflow Assistant</span>
-        <div class="service-name">Prozesse automatisch verbinden</div>
-        <div class="service-tagline">Kein manuelles Weiterleiten. Kein Vergessen.</div>
-        <div class="service-problem">"Wir verlieren Aufgaben im Übergabeprozess zwischen den Kollegen."</div>
-        <p class="service-text">Der Workflow Assistant verbindet Ihre bestehenden Tools und sorgt dafür, dass jeder Schritt in einem Prozess automatisch ausgelöst wird – Erinnerungen, Aufgaben, Weiterleitungen.</p>
-        <div class="service-benefits">
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Aufgaben automatisch erstellen und zuweisen</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Fristenüberwachung und automatische Erinnerungen</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Tool-Übergreifende Automatisierung</div>
-          <div class="service-benefit"><span class="service-benefit-icon">✓</span>Kein Prozessschritt geht mehr verloren</div>
-        </div>
-        <div class="service-example">💡 Beispiel: Handwerksbetrieb – Auftrag rein → Monteur informiert → Termin gesetzt → Rechnung vorbereitet. Vollautomatisch.</div>
-      </div>
-
-      <div class="service-cta-card reveal reveal-delay-2">
-        <div class="service-icon">✨</div>
-        <div class="display-sm" style="margin-bottom:12px">Ihre individuelle Lösung</div>
-        <p>Kein Betrieb ist identisch. Wir analysieren, welche Prozesse bei Ihnen die meiste Zeit kosten – und entwickeln eine maßgeschneiderte Kombination, die wirklich passt.</p>
-        <a href="#contact" class="btn btn-primary">Kostenlos analysieren lassen →</a>
-      </div>
-
-    </div>
   </div>
 </section>
 
