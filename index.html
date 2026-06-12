@@ -1461,7 +1461,7 @@
 
       <!-- Form -->
       <div class="contact-form reveal">
-        <form id="contactForm" onsubmit="handleSubmit(event)">
+        <form id="contactForm" action="https://formspree.io/f/mnjyopzn" method="POST" onsubmit="handleSubmit(event)">
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="f-vorname">Vorname</label>
@@ -1789,8 +1789,22 @@ function scrollToFaqCat(catId) {
 // ── Contact form ──
 function handleSubmit(e) {
   e.preventDefault();
-  document.getElementById('contactForm').style.display = 'none';
-  document.getElementById('formSuccess').classList.add('show');
+  var form = document.getElementById('contactForm');
+  var data = new FormData(form);
+  fetch('https://formspree.io/f/mnjyopzn', {
+    method: 'POST',
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  }).then(function(response) {
+    if (response.ok) {
+      form.style.display = 'none';
+      document.getElementById('formSuccess').classList.add('show');
+    } else {
+      alert('Es gab einen Fehler. Bitte versuchen Sie es erneut oder schreiben Sie direkt an kontakt@automatex-ai.de');
+    }
+  }).catch(function() {
+    alert('Es gab einen Fehler. Bitte schreiben Sie direkt an kontakt@automatex-ai.de');
+  });
 }
 
 // ── Scroll reveal ──
