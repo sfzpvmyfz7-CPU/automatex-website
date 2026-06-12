@@ -617,9 +617,285 @@
     <div class="section-header reveal">
       <div class="label">Leistungen</div>
       <h2 class="display-lg" style="margin-top:14px">Fünf Assistenten. Ein System.</h2>
-      <p class="body-md" style="margin-top:16px;max-width:600px">Jeder AutomateX-Assistent löst ein konkretes Problem in Ihrem Arbeitsalltag. Starten Sie mit dem, das Ihnen die meiste Zeit kostet.</p>
+      <p class="body-md" style="margin-top:16px;max-width:600px">Jeder AutomateX-Assistent löst ein konkretes Problem in Ihrem Alltag – in drei Ausbaustufen, die mit Ihrem Unternehmen wachsen.</p>
     </div>
-    <div class="services-grid">
+
+    <!-- Assistant selector tabs -->
+    <div class="assist-tabs reveal" id="assistTabs">
+      <button class="assist-tab active" onclick="switchAssist('mail')">📩 Mail</button>
+      <button class="assist-tab" onclick="switchAssist('pdf')">📄 PDF</button>
+      <button class="assist-tab" onclick="switchAssist('recruiting')">👥 Recruiting</button>
+      <button class="assist-tab" onclick="switchAssist('support')">🎧 Support</button>
+      <button class="assist-tab" onclick="switchAssist('workflow')">⚙️ Workflow</button>
+      <button class="assist-tab" onclick="switchAssist('individual')">✨ Individuell</button>
+    </div>
+
+    <!-- MAIL ASSISTANT -->
+    <div class="assist-panel active" id="assist-mail">
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-name">E-Mails vorsortieren</div>
+          <ul class="pricing-list">
+            <li>Prioritäten erkennen</li>
+            <li>Spam aussortieren</li>
+            <li>Kategorien bilden</li>
+            <li>Tagesübersicht erstellen</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Weniger Chaos im Posteingang.</div>
+          <a href="#contact" class="pricing-cta">Jetzt starten →</a>
+        </div>
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-badge">Empfohlen</div>
+          <div class="pricing-tier">Professional</div>
+          <div class="pricing-name">E-Mail-Bearbeitung automatisieren</div>
+          <ul class="pricing-list">
+            <li>Alles aus Starter</li>
+            <li>Antworten automatisch vorbereiten</li>
+            <li>Kundenanfragen erkennen</li>
+            <li>Weiterleitungen automatisieren</li>
+            <li>Eskalationen bei Notfällen</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Bis zu 80% weniger manueller Aufwand.</div>
+          <a href="#contact" class="pricing-cta">Jetzt starten →</a>
+        </div>
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-name">Vollautomatische E-Mail-Abwicklung</div>
+          <ul class="pricing-list">
+            <li>Alles aus Professional</li>
+            <li>Individuelle KI-Entscheidungen</li>
+            <li>CRM-Anbindung</li>
+            <li>ERP-Anbindung</li>
+            <li>Mehrsprachige Kommunikation</li>
+            <li>Komplette Prozessautomatisierung</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Der Posteingang arbeitet praktisch selbstständig.</div>
+          <a href="#contact" class="pricing-cta">Anfragen →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PDF ASSISTANT -->
+    <div class="assist-panel" id="assist-pdf">
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-name">PDFs automatisch auslesen</div>
+          <ul class="pricing-list">
+            <li>Texte erkennen</li>
+            <li>Daten extrahieren</li>
+            <li>Dokumente kategorisieren</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Keine manuelle Datenerfassung mehr.</div>
+          <a href="#contact" class="pricing-cta">Jetzt starten →</a>
+        </div>
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-badge">Empfohlen</div>
+          <div class="pricing-tier">Professional</div>
+          <div class="pricing-name">Dokumentenprozesse automatisieren</div>
+          <ul class="pricing-list">
+            <li>Alles aus Starter</li>
+            <li>Rechnungen verarbeiten</li>
+            <li>Verträge analysieren</li>
+            <li>Dokumente archivieren</li>
+            <li>Daten automatisch weiterleiten</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Dokumente werden automatisch verarbeitet.</div>
+          <a href="#contact" class="pricing-cta">Jetzt starten →</a>
+        </div>
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-name">Intelligente Dokumentenplattform</div>
+          <ul class="pricing-list">
+            <li>Alles aus Professional</li>
+            <li>Individuelle Dokumenttypen</li>
+            <li>ERP-Anbindung</li>
+            <li>Buchhaltungssysteme</li>
+            <li>Genehmigungsprozesse</li>
+            <li>KI-Dokumentenanalyse</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Vollautomatisierter Dokumentenfluss.</div>
+          <a href="#contact" class="pricing-cta">Anfragen →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RECRUITING ASSISTANT -->
+    <div class="assist-panel" id="assist-recruiting">
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-name">Bewerbungen vorsortieren</div>
+          <ul class="pricing-list">
+            <li>Lebensläufe analysieren</li>
+            <li>Kandidaten bewerten</li>
+            <li>Shortlist erstellen</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Schnellere Vorauswahl.</div>
+          <a href="#contact" class="pricing-cta">Jetzt starten →</a>
+        </div>
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-badge">Empfohlen</div>
+          <div class="pricing-tier">Professional</div>
+          <div class="pricing-name">Recruiting automatisieren</div>
+          <ul class="pricing-list">
+            <li>Alles aus Starter</li>
+            <li>Bewerberkommunikation</li>
+            <li>Terminvereinbarung</li>
+            <li>Interviewvorbereitung</li>
+            <li>Automatische Absagen</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Weniger Verwaltungsaufwand.</div>
+          <a href="#contact" class="pricing-cta">Jetzt starten →</a>
+        </div>
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-name">KI-Recruiting-System</div>
+          <ul class="pricing-list">
+            <li>Alles aus Professional</li>
+            <li>Individuelle Bewertungskriterien</li>
+            <li>ATS-Anbindung</li>
+            <li>Talentpool-Management</li>
+            <li>Mehrstufige Auswahlprozesse</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Schneller die richtigen Mitarbeiter finden.</div>
+          <a href="#contact" class="pricing-cta">Anfragen →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUPPORT ASSISTANT -->
+    <div class="assist-panel" id="assist-support">
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-name">Standardfragen automatisch beantworten</div>
+          <ul class="pricing-list">
+            <li>FAQ-Antworten</li>
+            <li>Sofortreaktionen</li>
+            <li>Ticket-Erstellung</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Schnellere Reaktionszeiten.</div>
+          <a href="#contact" class="pricing-cta">Jetzt starten →</a>
+        </div>
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-badge">Empfohlen</div>
+          <div class="pricing-tier">Professional</div>
+          <div class="pricing-name">Kundenservice automatisieren</div>
+          <ul class="pricing-list">
+            <li>Alles aus Starter</li>
+            <li>Kontextbezogene Antworten</li>
+            <li>Ticket-Priorisierung</li>
+            <li>Automatische Weiterleitung</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Weniger Supportaufwand.</div>
+          <a href="#contact" class="pricing-cta">Jetzt starten →</a>
+        </div>
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-name">KI-Support-Center</div>
+          <ul class="pricing-list">
+            <li>Alles aus Professional</li>
+            <li>Omnichannel-Support</li>
+            <li>CRM-Anbindung</li>
+            <li>Wissensdatenbank</li>
+            <li>Individuelle Eskalationslogik</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Rund-um-die-Uhr Kundenservice.</div>
+          <a href="#contact" class="pricing-cta">Anfragen →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORKFLOW ASSISTANT -->
+    <div class="assist-panel" id="assist-workflow">
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-name">Aufgaben automatisch weiterleiten</div>
+          <ul class="pricing-list">
+            <li>Erinnerungen</li>
+            <li>Benachrichtigungen</li>
+            <li>Aufgabenverteilung</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Nichts geht verloren.</div>
+          <a href="#contact" class="pricing-cta">Jetzt starten →</a>
+        </div>
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-badge">Empfohlen</div>
+          <div class="pricing-tier">Professional</div>
+          <div class="pricing-name">Prozesse verbinden</div>
+          <ul class="pricing-list">
+            <li>Alles aus Starter</li>
+            <li>Toolübergreifende Workflows</li>
+            <li>Automatische Freigaben</li>
+            <li>Prozessketten</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Weniger manuelle Übergaben.</div>
+          <a href="#contact" class="pricing-cta">Jetzt starten →</a>
+        </div>
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-name">Unternehmensweite Automatisierung</div>
+          <ul class="pricing-list">
+            <li>Alles aus Professional</li>
+            <li>Individuelle Prozesse</li>
+            <li>ERP-Anbindung</li>
+            <li>CRM-Anbindung</li>
+            <li>Mehrstufige Workflows</li>
+            <li>KI-gestützte Entscheidungen</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Vollständig digitalisierte Abläufe.</div>
+          <a href="#contact" class="pricing-cta">Anfragen →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- INDIVIDUELLE LÖSUNG -->
+    <div class="assist-panel" id="assist-individual">
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-name">Analyse &amp; Potenziale</div>
+          <ul class="pricing-list">
+            <li>Analyse Ihres Unternehmens</li>
+            <li>Identifikation erster Automatisierungspotenziale</li>
+            <li>Empfehlung passender Assistenten</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Klarheit, wo Sie anfangen sollten.</div>
+          <a href="#contact" class="pricing-cta">Kostenlos anfragen →</a>
+        </div>
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-badge">Beliebt</div>
+          <div class="pricing-tier">Professional</div>
+          <div class="pricing-name">Strategie &amp; Umsetzung</div>
+          <ul class="pricing-list">
+            <li>Konkrete Automatisierungsstrategie</li>
+            <li>Prozessbewertung</li>
+            <li>Implementierung der Lösung</li>
+            <li>Schulung Ihres Teams</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Fertige Automatisierung in Ihrem Betrieb.</div>
+          <a href="#contact" class="pricing-cta">Kostenlos anfragen →</a>
+        </div>
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-name">Individuelle KI-Lösung</div>
+          <ul class="pricing-list">
+            <li>Maßgeschneiderte KI-Entwicklung</li>
+            <li>Beratung &amp; Implementierung</li>
+            <li>Systemintegration</li>
+            <li>Langfristige Betreuung</li>
+            <li>Dedizierter Ansprechpartner</li>
+          </ul>
+          <div class="pricing-result">Ergebnis: Vollständig individualisierte Automatisierung.</div>
+          <a href="#contact" class="pricing-cta">Anfragen →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-grid" style="display:none">
 
       <div class="service-card reveal">
         <div class="service-icon">📧</div>
@@ -1351,6 +1627,23 @@
 
 <!-- ═══════════════════════ JAVASCRIPT ═══════════════════════ -->
 <script>
+// ── Assistant Tabs ──
+function switchAssist(id) {
+  document.querySelectorAll('.assist-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.querySelectorAll('.assist-tab').forEach(function(t) { t.classList.remove('active'); });
+  var panel = document.getElementById('assist-' + id);
+  if (panel) panel.classList.add('active');
+  var tabs = document.querySelectorAll('.assist-tab');
+  var ids = ['mail','pdf','recruiting','support','workflow','individual'];
+  var idx = ids.indexOf(id);
+  if (tabs[idx]) tabs[idx].classList.add('active');
+  // re-trigger reveal for cards
+  panel.querySelectorAll('.reveal').forEach(function(el) {
+    el.classList.remove('visible');
+    setTimeout(function() { el.classList.add('visible'); }, 50);
+  });
+}
+
 // ── Nav scroll effect ──
 var nav = document.getElementById('nav');
 window.addEventListener('scroll', function() {
