@@ -781,7 +781,7 @@ ul { list-style: none; }
   .hero-stat { border-right: none; border-bottom: 1px solid var(--border); }
   .hero-stat:last-child { border-bottom: none; }
   .nav-links { display: none; }
-  .nav-cta .btn:not(.btn-primary) { display: none; }
+  .nav-cta { display: none; }
   .hamburger { display: flex; }
   .demo-flow { grid-template-columns: repeat(2, 1fr); }
   .form-row { grid-template-columns: 1fr; }
